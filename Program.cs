@@ -1,11 +1,9 @@
-﻿// Class untuk menyimpan data kode pos
-
-using static KodePos;
+﻿using static KodePos;
 public class KodePos
 {
     private Dictionary<string, string> kodePos;
 
-    // Konstruktor untuk inisialisasi data kode pos
+
     public KodePos()
     {
         kodePos = new Dictionary<string, string>
@@ -24,7 +22,6 @@ public class KodePos
         };
     }
 
-    // Method untuk mendapatkan kode pos berdasarkan kelurahan
     public string GetKodePos(string kelurahan)
     {
         if (kodePos.ContainsKey(kelurahan))
@@ -38,23 +35,63 @@ public class KodePos
     }
 }
 
+public enum DoorState
+{
+    Terkunci,
+    Terbuka
+}
+
+
+public class DoorMachine
+{
+    private DoorState currentState;
+ 
+    public DoorMachine()
+    {
+        currentState = DoorState.Terkunci;
+    }
+
+    public void BukaPintu()
+    {
+        currentState = DoorState.Terbuka;
+        Console.WriteLine("Pintu tidak terkunci");
+    }
+
+    public void KunciPintu()
+    {
+        currentState = DoorState.Terkunci;
+        Console.WriteLine("Pintu terkunci");
+    }
+}
+
 class Program
 {
     static void Main(string[] args)
     {
-        // Menggunakan teknik table-driven untuk mendapatkan kode pos
+
         KodePos kodePosObj = new KodePos();
         string kelurahan = "Batununggal";
         string kodePos = kodePosObj.GetKodePos(kelurahan);
         Console.WriteLine($"Kode Pos {kelurahan}: {kodePos}");
 
-        kelurahan = "Kujangsari";
+        kelurahan = "Wates";
         kodePos = kodePosObj.GetKodePos(kelurahan);
         Console.WriteLine($"Kode Pos {kelurahan}: {kodePos}");
 
-        kelurahan = "Cijaura";
+        kelurahan = "Samoja";
         kodePos = kodePosObj.GetKodePos(kelurahan);
         Console.WriteLine($"Kode Pos {kelurahan}: {kodePos}");
+
+        DoorMachine doorMachine = new DoorMachine();
+        Console.WriteLine("");
+        Console.WriteLine("Dooormachine");
+        Console.WriteLine("");
+        Console.WriteLine("state pertama: ");
+        doorMachine.KunciPintu();
+        Console.WriteLine("");
+        Console.WriteLine("state kedua: ");
+        doorMachine.BukaPintu();
+
 
     }
 }
