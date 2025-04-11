@@ -28,10 +28,7 @@ public class KodePos
         {
             return kodePos[kelurahan];
         }
-        else
-        {
-            return "Kode Pos Tidak Ditemukan";
-        }
+        return "Kode Pos Tidak Ditemukan";   
     }
 
     public void TampilkanSemuaKodePos()
