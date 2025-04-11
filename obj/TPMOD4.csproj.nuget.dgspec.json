@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fiona\\OneDrive - Telkom University\\Semester 4\\pratikum KPL\\TPMOD4\\TPMOD4.csproj": {}
+    "C:\\Users\\fiona\\OneDrive - Telkom University\\kuliah\\Semester 4\\pratikum KPL\\mekpl\\TP_KPL_4\\TPMOD4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fiona\\OneDrive - Telkom University\\Semester 4\\pratikum KPL\\TPMOD4\\TPMOD4.csproj": {
+    "C:\\Users\\fiona\\OneDrive - Telkom University\\kuliah\\Semester 4\\pratikum KPL\\mekpl\\TP_KPL_4\\TPMOD4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fiona\\OneDrive - Telkom University\\Semester 4\\pratikum KPL\\TPMOD4\\TPMOD4.csproj",
+        "projectUniqueName": "C:\\Users\\fiona\\OneDrive - Telkom University\\kuliah\\Semester 4\\pratikum KPL\\mekpl\\TP_KPL_4\\TPMOD4.csproj",
         "projectName": "TPMOD4",
-        "projectPath": "C:\\Users\\fiona\\OneDrive - Telkom University\\Semester 4\\pratikum KPL\\TPMOD4\\TPMOD4.csproj",
+        "projectPath": "C:\\Users\\fiona\\OneDrive - Telkom University\\kuliah\\Semester 4\\pratikum KPL\\mekpl\\TP_KPL_4\\TPMOD4.csproj",
         "packagesPath": "C:\\Users\\fiona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fiona\\OneDrive - Telkom University\\Semester 4\\pratikum KPL\\TPMOD4\\obj\\",
+        "outputPath": "C:\\Users\\fiona\\OneDrive - Telkom University\\kuliah\\Semester 4\\pratikum KPL\\mekpl\\TP_KPL_4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fiona\\AppData\\Roaming\\NuGet\\NuGet.Config",

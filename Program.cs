@@ -33,6 +33,15 @@ public class KodePos
             return "Kode Pos Tidak Ditemukan";
         }
     }
+
+    public void TampilkanSemuaKodePos()
+    {
+        Console.WriteLine("Daftar Kode Pos:");
+        foreach (var entry in kodePos)
+        {
+            Console.WriteLine($"Kelurahan: {entry.Key}, Kode Pos: {entry.Value}");
+        }
+    }
 }
 
 public enum DoorState
@@ -68,7 +77,7 @@ class Program
 {
     static void Main(string[] args)
     {
-
+        
         KodePos kodePosObj = new KodePos();
         string kelurahan = "Batununggal";
         string kodePos = kodePosObj.GetKodePos(kelurahan);
